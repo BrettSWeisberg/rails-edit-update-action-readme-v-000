@@ -24,7 +24,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    binding.pry
+    
     @post = Post.find(params[:id])
     @post.update(params.require(:posts))
     redirect_to post_path(@post)
